@@ -1,0 +1,252 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: black;
+	}
+
+body {
+	width: 100%;
+	height: 100%;
+	/*border: 2px solid white;*/
+	margin: auto;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	text-align: center;
+	word-spacing: 200px;
+	width: 100%;
+	background-color: #C480CD;
+	/*border-bottom: 2px solid black;
+	border-top: 2px solid black;*/
+	}
+	
+#nav_menu ul li {
+	display: inline;
+	padding-left: 9.5%;
+	padding-right: 7%;
+	}
+	
+#nav_menu ul li a {
+	font-size: 200%;
+	font-weight: bold;
+	text-decoration: none;
+	color: black; 
+	}
+
+#nav_menu ul li a:hover, #nav_list ul li a:focus {
+	color: white;
+}
+	
+header {
+background-image: url("../images/window.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: scroll;
+	padding-bottom: 55%;
+	position: relative;
+	}
+
+
+/*  name header */		
+header h1 { 
+	word-spacing: 300px;
+	position: absolute;
+	width: 100%;
+	padding-left: 25%;
+	font-size: 350%;
+	color: white;
+	font-family: Iowan Old Style;
+	padding-top: 15%;
+	}
+
+/* university and email */
+div {
+	padding-bottom: 55.8%;
+	background-color: white;
+	}
+	
+/* pro pic */
+div img {
+	float: left;
+	width: 30%; /* (663px)(.25)= 165.75px */
+	padding-top: 4%;
+	padding-left: 13%;
+	position: absolute;
+	}
+	
+/* university header */	
+div h2 {
+	font-size: 640%; /*1024 px */
+	color: #C480CD;
+	text-align: center;
+	padding-top: 12%; 
+	padding-left: 40%; /* 1024 font + 4px border + 165.75px pic = 1193.75px */
+	float: right;
+	position: relative;
+	font-family: Iowan Old Style;
+}
+
+/* grad header */
+div h3 {
+	font-size: 230%; 
+	color: gray;
+	padding-top: 47%;
+	padding-left: 30%;
+	padding-right: 30%;
+	position: absolute;
+	font-family: Iowan Old Style;
+	}
+
+/* styles for main */
+main {
+	clear: both;
+	background-image: url("../images/coverphoto.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: to bottom;
+	background-attachment: scroll;
+	padding-bottom: 55%;
+	border-bottom: 2px solide white;
+	/*background-image: linear-gradient( 
+		to bottom, #230926 0%, #55165D 30%, #F6CDFB 50%, #B726CB 80%);*/
+	}
+
+main p {	
+	font-size: 320%; 
+	font-family: Iowan Old Style;
+	color: white;
+	}
+	
+#major { 
+	float: left;
+	padding-left: 3%;
+	padding-top: 14%;
+	}
+	
+
+#minor {
+	float: right;
+	padding-right: 3%;
+	padding-top: 22%;
+	}
+
+
+/* bullet points 
+main li { 
+	font-size: 220%; 
+	list-style-type: square;
+	color: white;
+	}
+*/	
+
+/*main ul {
+	padding-left: 22%;
+	padding-top: 7%;
+	padding-bottom: 5%;
+	padding-right: 2%;
+}
+
+/* main text */	
+
+
+
+main2 p { /* new: decending selector old: main>p is child selector*/
+	font-size: 170%; 
+	padding: 2%;
+	color: white;
+	}
+	
+#mobile_menu { 
+	display: none; 
+	}
+
+footer {
+	color: gray;
+	text-align: center;
+	padding: 2%;
+	}
+
+/* samsung s5/iphone portrait (375px or less)*/
+@media only screen and (max-width: 375px) {
+/*styles */
+	#nav_menu {display: none; 
+	}
+	
+	#mobile_menu {display: block; 
+	}	
+	
+	body {
+		border: none;
+		width: 100%;
+		}
+	
+	header {
+		padding-bottom: 47%;
+		}
+		
+	header h1 {
+		padding-top: 0%;
+		font-size: 230%;
+		text-align: center;
+		padding-left: 0%;
+		}
+		
+	header h2 {
+		font-size: 230%;
+		text-align: center;
+		padding-right: 0%;
+		}
+	
+	div {
+	
+		font-size: 25%;
+		}
+		
+	main {
+		width: 100%;
+		}
+		
+	main p {
+		font-size: 150%;
+	}
+		
+	main aside img {
+		width: 15%;
+		padding-top
+		}
+		
+	/*
+	main li {
+		font-size: 110%;
+		}
+		
+	main ul {
+		padding-top: 5%;
+		padding-left: 29%;
+		}
+		*/
+	main p {
+		font-size: 100%;
+		}
+		
+
+
+
+	footer {
+		font-size: 50%;
+		}
+
+
+/* samsung s5/iphone landscape (667px or less) */
+@media only screen and (max-width: 667px) {
+/*styles*/
+	#nav_menu {display: none; }
+	#mobile_menu {display: block; }	
+}
+
+
